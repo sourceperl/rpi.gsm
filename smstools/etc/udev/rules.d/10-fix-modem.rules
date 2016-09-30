@@ -1,0 +1,2 @@
+# Fix GSM device to /dev/ttyGSM for Huawei E270 modem
+SUBSYSTEM=="tty", ATTRS{idVendor}=="12d1", ATTRS{idProduct}=="1001", ACTION=="add", SYMLINK+="ttyGSM"
